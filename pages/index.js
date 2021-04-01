@@ -1,18 +1,30 @@
 import Head from 'next/head'
 import Menu from '../components/menu'
+import Landing from '../components/landing'
+import { Container } from '@chakra-ui/react'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-libraPurple">
+    <div className="flex flex-col items-center min-h-screen py-2 bg-libraPurple">
       <Head>
-        <title>Create Next App</title>
+        <title>Libra Friends</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div className="border-b w-full mt-3">
       <Menu />
+      </div>
+   
+      
+      <Container maxWidth="6xl">
+      
 
-      <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
+    
+      
+      <Landing />
+
+      {/* <main className="flex flex-col items-center justify-center flex-1 px-20 text-center"> */}
+        {/* <h1 className="text-6xl font-bold">
           Welcome to{' '}
           <a className="text-blue-600" href="https://nextjs.org">
             Next.js!
@@ -79,7 +91,8 @@ export default function Home() {
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
         </a>
-      </footer>
+      </footer> */}
+      </Container>
     </div>
   )
 }

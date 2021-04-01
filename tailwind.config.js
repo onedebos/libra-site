@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'libraPurple': '#FCFAF9'
+        'libraPurple': '#FCFAF9',
+        'libraOrange': '#f99200'
       }
     },
   },
