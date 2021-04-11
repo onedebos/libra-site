@@ -5,7 +5,9 @@ module.exports = {
     extend: {
       colors:{
         'libraPurple': '#FCFAF9',
-        'libraOrange': '#f99200'
+        'libraOrange': '#f99200',
+        'libraPink': 'rgba(235,179,159,1)',
+        'libraPurple2': '#e7d9f2'
       }
     },
   },

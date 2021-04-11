@@ -16,11 +16,13 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;500;700&display=swap"
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,400&display=swap&family=DM+Serif+Display:ital@0;1&display=swap&family=Lora:wght@400;500;700&display=swap" rel="stylesheet" /> 
+        {/* <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;500;700&display=swap&family=Lora:wght@400;500;700&display=swap"
           rel="stylesheet"
-        />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet" /> 
+        /> */}
+        
+
         {/* Load nprogress stylesheet */}
         <link
           rel="stylesheet"

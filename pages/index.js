@@ -1,7 +1,14 @@
-import Head from 'next/head'
-import Menu from '../components/menu'
-import Landing from '../components/landing'
-import { Container } from '@chakra-ui/react'
+import Head from 'next/head';
+import Menu from '../components/menu';
+import Landing from '../components/landing';
+import { Container } from '@chakra-ui/react';
+import TheBalancedLibra from '../components/theBalancedLibra';
+import DearLibraFriends from '../components/dearLibraFriends';
+import Quote from '../components/quote';
+import {QUOTES} from '../utils/constants'
+import YouWillLoveThese from '../components/youWillLoveThese';
+import Instagram from '../components/instagram';
+import Poll from '../components/poll';
 
 export default function Home() {
   return (
@@ -12,18 +19,23 @@ export default function Home() {
       </Head>
 
       <div className="border-b w-full mt-3">
-      <Menu />
+        <Menu />
       </div>
-   
-      
+
       <Container maxWidth="6xl">
+        <Landing />
+        
+      </Container>
+
+      <TheBalancedLibra />
+      <DearLibraFriends />
+      <YouWillLoveThese />
+      <Quote quote={QUOTES.QUOTE1} additionalClasses="quote-bg-1" />
+      <Instagram />
+    <Poll />
       
 
-    
-      
-      <Landing />
-
-      {/* <main className="flex flex-col items-center justify-center flex-1 px-20 text-center"> */}
+        {/* <main className="flex flex-col items-center justify-center flex-1 px-20 text-center"> */}
         {/* <h1 className="text-6xl font-bold">
           Welcome to{' '}
           <a className="text-blue-600" href="https://nextjs.org">
@@ -92,7 +104,7 @@ export default function Home() {
           <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
         </a>
       </footer> */}
-      </Container>
+      
     </div>
-  )
+  );
 }
